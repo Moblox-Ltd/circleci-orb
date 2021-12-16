@@ -541,6 +541,11 @@ jobs:
         type: string
         default: ''
 
+      project:
+        description: Project Folder using --project argument
+        type: string
+        default: ''
+
       env:
         description: Values to pass using --env argument
         type: string
@@ -660,6 +665,7 @@ jobs:
                           <<# parameters.browser>> --browser <<parameters.browser>> <</ parameters.browser>> \
                           <<# parameters.config-file>> --config-file <<parameters.config-file>> <</ parameters.config-file>> \
                           <<# parameters.config>> --config <<parameters.config>> <</ parameters.config>> \
+                          <<# parameters.project>> --project <<parameters.project>> <</ parameters.project>> \
                           <<# parameters.env>> --env <<parameters.env>> <</ parameters.env>> \
                           <<# parameters.record >> --record \
                             <<# parameters.group>> --group '<<parameters.group>>' <</ parameters.group>> \
@@ -682,6 +688,7 @@ jobs:
                           <<# parameters.browser>> --browser <<parameters.browser>> <</ parameters.browser>> \
                           <<# parameters.config-file>> --config-file <<parameters.config-file>> <</ parameters.config-file>> \
                           <<# parameters.config>> --config <<parameters.config>> <</ parameters.config>> \
+                          <<# parameters.project>> --project <<parameters.project>> <</ parameters.project>> \
                           <<# parameters.env>> --env <<parameters.env>> <</ parameters.env>> \
                           <<# parameters.record >> --record \
                             <<# parameters.group>> --group '<<parameters.group>>' <</ parameters.group>> \
